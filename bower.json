@@ -1,0 +1,20 @@
+{
+  "name": "angular2-skeleton",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Lisa MacCarrigan <Lisa.MacCarrigan@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/LisaMacCarrigan/meal-tracker-angular2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
