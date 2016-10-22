@@ -8,7 +8,7 @@ import { Food } from './food.model';
       <h2>Edit Food</h2>
       <hr>
       <div class="form-group">
-        <label for="day-of-week">Select Day</label>
+        <label class="food-form-label" for="day-of-week">Select Day</label>
         <select class="form-control"  [(ngModel)]="childSelectedFood.day">
           <option value="Monday">Monday</option>
           <option value="Tuesday">Tuesday</option>
@@ -20,7 +20,7 @@ import { Food } from './food.model';
         </select>
       </div>
       <div class="form-group">
-        <label>Select Meal Type:</label>
+        <label class="food-form-label">Select Meal Type:</label>
         <select class="form-control" [(ngModel)]="childSelectedFood.meal">
           <option value="Breakfast">Breakfast</option>
           <option value="Lunch">Lunch</option>
@@ -29,15 +29,15 @@ import { Food } from './food.model';
         </select>
       </div>
       <div class="form-group">
-        <label>Enter Food Name:
+        <label class="food-form-label">Enter Food Name:
         <input class="form-control" [(ngModel)]="childSelectedFood.name"></label>
       </div>
       <div class="form-group">
-        <label>Enter Calories:
+        <label class="food-form-label">Enter Calories:
         <input class="form-control" [(ngModel)]="childSelectedFood.calories"></label>
       </div>
       <div class="form-group">
-        <label>Add Details:
+        <label class="food-form-label">Add Details:
         <input class="form-control" [(ngModel)]="childSelectedFood.details"></label>
       </div>
       <button class="btn btn-default" (click)="doneClicked()">Done</button>
