@@ -4,7 +4,7 @@ import { Food } from './food.model';
 @Component({
   selector: 'food-list',
   template: `
-    <h3>Current Food List</h3>
+    <h3>All Foods</h3>
     <hr>
     <ul class="list-group">
       <div *ngFor="let currentFood of childFoodList">
