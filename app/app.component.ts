@@ -34,8 +34,8 @@ import { Food } from './food.model';
 
 export class AppComponent {
   public masterFoodList: Food[] = [
-     new Food("Kombucha", 40, "sparkling probiotic"),
-     new Food("Olives", 100, "garlic stuffed")
+     new Food("Monday", "Kombucha", 40, "sparkling probiotic"),
+     new Food("Tuesday", "Olives", 100, "garlic stuffed")
   ];
   selectedFood: Food = null;
   showDetails(clickedFood: Food) {
