@@ -21,7 +21,7 @@ import { Food } from './food.model';
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-12">
         <food-list
           [childFoodList]="masterFoodList"
           (clickSender)="showDetails($event)"

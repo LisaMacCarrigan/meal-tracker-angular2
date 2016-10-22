@@ -5,7 +5,7 @@ import { Food } from './food.model';
   selector: 'edit-food',
   template: `
 
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div id="myModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div *ngIf="childSelectedFood">
@@ -44,8 +44,11 @@ import { Food } from './food.model';
               <label class="food-form-label">Add Details:
               <input class="form-control" [(ngModel)]="childSelectedFood.details"></label>
             </div>
-            <button class="btn btn-default" (click)="doneClicked()">Done</button>
-          </div>
+            <button class="btn btn-default" (click)="
+            doneClicked();
+            // $('body.modal-open').removeClass('modal-open');
+            ">Done</button>
+            </div>
           </div>
         </div>
       </div>
