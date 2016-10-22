@@ -23,7 +23,6 @@ import { Food } from './food.model';
     newCalories.value='';
     newDetails.value='';
     ">Add</button>
-</div>
   `
 })
 
