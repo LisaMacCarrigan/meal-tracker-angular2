@@ -4,7 +4,7 @@ import { Food } from './food.model';
 @Component({
   selector: 'new-food',
   template: `
-  <h2>Add to Food Diary</h2>
+  <h3>Add to Food Diary</h3>
   <hr>
   <div class="form-group">
     <label class="food-form-label" for="day-of-week">Select Day</label>

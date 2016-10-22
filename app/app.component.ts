@@ -6,8 +6,9 @@ import { Food } from './food.model';
   template: `
   <div class="container">
     <div class="row">
-      <h1>Meal Tracker</h1>
       <div class="col-xs-6">
+      <h1>Meal Tracker</h1>
+      <hr>
         <new-food
           (newFoodSender)="addFood($event)"
         ></new-food>
@@ -20,7 +21,7 @@ import { Food } from './food.model';
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-xs-6">
         <food-list
           [childFoodList]="masterFoodList"
           (clickSender)="showDetails($event)"

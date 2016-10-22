@@ -4,12 +4,13 @@ import { Food } from './food.model';
 @Component({
   selector: 'food-list',
   template: `
-    <h2>Current Food List</h2>
+    <h3>Current Food List</h3>
     <hr>
     <div *ngFor="let currentFood of childFoodList">
-      <h4>{{ currentFood.name }}
-      <button class="btn btn-default btn-xs" (click)="editButtonClicked(currentFood)">Edit</button>
-      </h4>
+      <h5>{{ currentFood.name }}
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bd-example-modal-sm" (click)="editButtonClicked(currentFood)">Edit</button>
+
+      </h5>
     </div>
   `
 })
