@@ -5,8 +5,8 @@ import { Food } from './food.model';
   selector: 'my-app',
   template: `
   <div class="container">
+  <h1>Meal Tracker</h1>
     <div class="row">
-    <h1>Meal Tracker</h1>
       <div class="col-xs-6">
         <new-food
           (newFoodSender)="addFood($event)"
