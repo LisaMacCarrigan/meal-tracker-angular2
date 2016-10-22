@@ -4,7 +4,7 @@ import { Food } from './food.model';
 @Component({
   selector: 'new-food',
   template: `
-  <h2>Add Food</h2>
+  <h2>Add to Food Diary</h2>
   <hr>
   <div class="form-group">
     <label for="day-of-week">Select Day</label>
@@ -16,6 +16,15 @@ import { Food } from './food.model';
       <option value="Friday">Friday</option>
       <option value="Saturday">Saturday</option>
       <option value="Sunday">Sunday</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="meal-type">Select Meal Type</label>
+    <select class="form-control" #newMealType>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Snack">Snack</option>
     </select>
   </div>
   <div class="form-group">
@@ -31,8 +40,9 @@ import { Food } from './food.model';
     <input class="form-control" #newDetails></label>
   </div>
   <button class="btn btn-default" (click)="
-    addClicked(newDay.value, newName.value, newCalories.value, newDetails.value);
+    addClicked(newDay.value, newMealType.value, newName.value, newCalories.value, newDetails.value);
     newDay.value='';
+    newMealType.value='';
     newName.value='';
     newCalories.value='';
     newDetails.value='';
@@ -42,8 +52,8 @@ import { Food } from './food.model';
 
 export class NewFoodComponent {
   @Output() newFoodSender = new EventEmitter();
-  addClicked(day: string, name: string, calories: number, details: string) {
-    var newFoodToAdd: Food = new Food(day, name, calories, details);
+  addClicked(day: string, meal: string, name: string, calories: number, details: string) {
+    var newFoodToAdd: Food = new Food(day, meal, name, calories, details);
     this.newFoodSender.emit(newFoodToAdd);
   }
 }

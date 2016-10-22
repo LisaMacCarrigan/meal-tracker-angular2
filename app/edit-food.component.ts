@@ -20,6 +20,15 @@ import { Food } from './food.model';
         </select>
       </div>
       <div class="form-group">
+        <label>Select Meal Type:</label>
+        <select class="form-control" [(ngModel)]="childSelectedFood.meal">
+          <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+          <option value="Snack">Snack</option>
+        </select>
+      </div>
+      <div class="form-group">
         <label>Enter Food Name:
         <input class="form-control" [(ngModel)]="childSelectedFood.name"></label>
       </div>
