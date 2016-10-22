@@ -1,40 +1,35 @@
 import { Component } from '@angular/core';
+import { Food } from './food.model';
 
 @Component({
   selector: 'my-app',
   template: `
   <div class="container">
     <h1>Meal Tracker</h1>
-    <div *ngFor="let currentFood of foods">
-      <h3>{{ currentFood.name }}
-      <button class="btn btn-default btn-xs" (click)="showDetails(currentFood)">Edit</button>
-      </h3>
-    </div>
-    <div *ngIf="selectedFood">
-      <h1>Edit Food</h1>
-      <div class="form-group">
-        <label>Enter Food Name:
-        <input class="form-control" [(ngModel)]="selectedFood.name"></label>
-      </div>
-      <div class="form-group">
-        <label>Enter Calories:
-        <input class="form-control" [(ngModel)]="selectedFood.calories"></label>
-      </div>
-      <div class="form-group">
-        <label>Add Details:
-        <input class="form-control" [(ngModel)]="selectedFood.details"></label>
-      </div>
-      <button class="btn btn-default" (click)="finishedEditing()">Done</button>
-    </div>
+
+    <food-list
+      [childFoodList]="masterFoodList"
+      (clickSender)="showDetails($event)"
+    ></food-list>
+
+    <new-food
+      (newFoodSender)="addFood($event)"
+    ></new-food>
+
+    <edit-food
+      [childSelectedFood]="selectedFood"
+      (doneClickedSender)="finishedEditing()"
+    ></edit-food>
+
+
   </div>
   `
 })
 
 export class AppComponent {
-  public foods: Food[] = [
-    new Food("Kombucha", 40, "sparkling probiotic"),
-    new Food("Olives", 100, "garlic stuffed")
-  ];
+  public masterFoodList: Food[] = [
+
+  ]
   selectedFood: Food = null;
   showDetails(clickedFood: Food) {
     this.selectedFood = clickedFood;
@@ -42,8 +37,7 @@ export class AppComponent {
   finishedEditing() {
     this.selectedFood = null;
   }
-}
-
-export class Food {
-  constructor(public name: string, public calories: number, public details: string) {   }
+  addFood(newFoodFromChild: Food) {
+    this.masterFoodList.push(newFoodFromChild);
+  }
 }
