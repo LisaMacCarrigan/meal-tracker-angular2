@@ -5,23 +5,30 @@ import { Food } from './food.model';
   selector: 'my-app',
   template: `
   <div class="container">
-    <h1>Meal Tracker</h1>
+    <div class="row">
+      <h1>Meal Tracker</h1>
+      <div class="col-xs-6">
+        <new-food
+          (newFoodSender)="addFood($event)"
+        ></new-food>
+      </div>
+      <div class="col-xs-6">
+        <edit-food
+          [childSelectedFood]="selectedFood"
+          (doneClickedSender)="finishedEditing()"
+        ></edit-food>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <food-list
+          [childFoodList]="masterFoodList"
+          (clickSender)="showDetails($event)"
+        ></food-list>
+      </div>
+    </div>
 
-    <food-list
-      [childFoodList]="masterFoodList"
-      (clickSender)="showDetails($event)"
-    ></food-list>
 
-    <new-food
-      (newFoodSender)="addFood($event)"
-    ></new-food>
-
-    <edit-food
-      [childSelectedFood]="selectedFood"
-      (doneClickedSender)="finishedEditing()"
-    ></edit-food>
-
-  </div>
   `
 })
 
