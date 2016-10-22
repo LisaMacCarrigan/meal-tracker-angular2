@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   <div class="container">
     <h1>Meal Tracker</h1>
     <div *ngFor="let currentFood of foods">
-      <h3>{{ currentFood.name }}</h3>
-      <button class="btn btn-default" (click)="showDetails(currentFood)">Edit</button>
+      <h3>{{ currentFood.name }}
+      <button class="btn btn-default btn-xs" (click)="showDetails(currentFood)">Edit</button>
+      </h3>
     </div>
     <div *ngIf="selectedFood">
       <h1>Edit Food</h1>
@@ -20,10 +21,10 @@ import { Component } from '@angular/core';
         <input class="form-control" [(ngModel)]="selectedFood.calories"></label>
       </div>
       <div class="form-group">
-        <label>Enter Food Details:
+        <label>Add Details:
         <input class="form-control" [(ngModel)]="selectedFood.details"></label>
-        <button class="btn btn-default" (click)="finishedEditing()">Done</button>
       </div>
+      <button class="btn btn-default" (click)="finishedEditing()">Done</button>
     </div>
   </div>
   `
