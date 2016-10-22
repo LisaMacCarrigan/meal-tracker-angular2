@@ -17,7 +17,12 @@ import { Food } from './food.model';
     <label>Add Details:
     <input class="form-control" #newDetails></label>
   </div>
-  <button class="btn btn-default" (click)="addClicked(newName.value, newCalories.value, newDetails.value)">Add</button>
+  <button class="btn btn-default" (click)="
+    addClicked(newName.value, newCalories.value, newDetails.value);
+    newName.value='';
+    newCalories.value='';
+    newDetails.value='';
+    ">Add</button>
 </div>
   `
 })

@@ -21,15 +21,15 @@ import { Food } from './food.model';
       (doneClickedSender)="finishedEditing()"
     ></edit-food>
 
-
   </div>
   `
 })
 
 export class AppComponent {
   public masterFoodList: Food[] = [
-
-  ]
+     new Food("Kombucha", 40, "sparkling probiotic"),
+     new Food("Olives", 100, "garlic stuffed")
+  ];
   selectedFood: Food = null;
   showDetails(clickedFood: Food) {
     this.selectedFood = clickedFood;
