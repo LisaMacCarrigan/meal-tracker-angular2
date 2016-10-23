@@ -61,6 +61,10 @@ export class EditFoodComponent {
   @Output() deleteClickedSender = new EventEmitter();
   doneClicked() {
     this.doneClickedSender.emit();
-    $("body").css("background-color", "red");
+    $("body").removeClass("modal-open");
+    $(".modal-backdrop.fade.in").remove();
+    $(".modal.fade.bd-example-modal-sm.in").removeClass("in");
+    $("#myModal").css("display", "none");
+
   }
 }
