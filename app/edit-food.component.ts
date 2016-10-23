@@ -46,7 +46,7 @@ import { Food } from './food.model';
             </div>
             <button class="btn btn-default" (click)="
             doneClicked();
-            // $('body.modal-open').removeClass('modal-open');
+
             ">Done</button>
             </div>
           </div>
@@ -61,5 +61,6 @@ export class EditFoodComponent {
   @Output() deleteClickedSender = new EventEmitter();
   doneClicked() {
     this.doneClickedSender.emit();
+    $("body").css("background-color", "red");
   }
 }
