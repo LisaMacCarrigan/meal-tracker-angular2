@@ -29,13 +29,13 @@ This is a web application that allows a user to log foods they have eaten each d
 Link to GitHub pages site: https://lisamaccarrigan.github.io/meal-tracker-angular2
 
 * Clone this repository: https://github.com/LisaMacCarrigan/meal-tracker-angular2.git
-* OPEN project folder ('meal-tracker-angular2') in Code Editor of choice
+* Open project folder ('meal-tracker-angular2') in Code Editor of choice
 * In terminal, run:
-
-  $ npm install
-  $ bower install
-  $ gulp build
-  $ gulp serve
+#
+    $ npm install
+    $ bower install
+    $ gulp build
+    $ gulp serve
 
 ----
 
