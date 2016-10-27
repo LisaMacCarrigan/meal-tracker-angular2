@@ -32,10 +32,10 @@ Link to GitHub pages site: https://lisamaccarrigan.github.io/meal-tracker-angula
 * Open project folder ('meal-tracker-angular2') in Code Editor of choice
 * In terminal, run:
 
-    $ npm install
-    $ bower install
-    $ gulp build
-    $ gulp serve
+        $ npm install
+        $ bower install
+        $ gulp build
+        $ gulp serve
 
 ----
 
