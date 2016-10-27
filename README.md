@@ -1,15 +1,15 @@
 # **meal-tracker**
 
-##### A project utilizing Angular2. 10.21.2016
-#
-##### By [Lisa MacCarrigan](https://github.com/lisamaccarrigan)
+#### A meal tracker built using Angular2. 10.21.2016
+
+#### By [Lisa MacCarrigan](https://github.com/lisamaccarrigan)
 #
 <!-- ![screenshot of project main page](img/web-app.png) -->
 
 ----
 ### **Description**
 
-This is a web application that allows a user to log foods they have eaten each day, including details about the meal and the number of calories per item. This application utilizes Angular2.
+This is a web application that allows a user to log foods they have eaten each day, including details about the meal and the number of calories per item. Added foods can also be filtered based upon calorie content. This application utilizes Angular2.
 
 ----
 ### **Specifications**
@@ -31,10 +31,11 @@ Link to GitHub pages site: https://lisamaccarrigan.github.io/meal-tracker-angula
 * Clone this repository: https://github.com/LisaMacCarrigan/meal-tracker-angular2.git
 * OPEN project folder ('meal-tracker-angular2') in Code Editor of choice
 * In terminal, run:
-  npm install
-  bower install
-  gulp build
-  gulp serve
+
+  $ npm install
+  $ bower install
+  $ gulp build
+  $ gulp serve
 
 ----
 
