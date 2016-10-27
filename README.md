@@ -1,43 +1,69 @@
-Meal Tracker
-Create a meal tracking application. Users should be able to log foods they've eaten each day, including details about the meal and its number of calories. You may assume foods being logged are for a single day (you are not required to keep track of multiple days' meals).
+# **meal-tracker**
 
-For example:
+##### A project utilizing Angular2. 10.21.2016
+#
+##### By [Lisa MacCarrigan](https://github.com/lisamaccarrigan)
+#
+<!-- ![screenshot of project main page](img/web-app.png) -->
 
----------
-Name: "Hamburger"
-Details: "Didn't get a soda or cheese on my burger!"
-Calories: 354
----------
+----
+### **Description**
 
----------
-Name: "Fries"
-Details: "I only ate half of them."
-Calories: 365
----------
-As a user…
+This is a web application that allows a user to log foods they have eaten each day, including details about the meal and the number of calories per item. This application utilizes Angular2.
 
-I want to log a food I have eaten by submitting a form with food name, calories and details.
-I want to view a list of foods I have logged.
-I want options to view all foods, only high-calorie foods (more than 500 calories), or only lower-calorie foods (less than 500 calories).
-I want to click a food to edit its name, details or calories (in case I decide to pretend my fries were 100 calories instead of 365).
-Further Exploration
-If you have completed all objectives, consider additional features such as:
+----
+### **Specifications**
+| _Behavior_ | _Input_ | _Output_ |
+|:---------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|
+| Select Day From Dropdown Menu | Select "Monday" | "Monday" |
+| Select Meal Type From Dropdown Menu | Select "Breakfast" | "Breakfast" |
+| Enter Food Name | "Banana" | "Banana" |
+| Enter Calories | 105 | 105 |
+| Add Details | "Organic" | "Organic" |
+| Edit Food | Change Meal Type to "Snack" | "Snack" |
+| Filter Foods by Calories ("High" or "Low") | Select "Low Calorie" | lists all foods < 500 cal |
 
-Custom SASS styling with corresponding Gulp tasks to compile.
-Display of the total number of calories consumed in a day, and/or the average number of calories consumed in a day.
-Add a property that records when each food was eaten. The user could enter a date and time, or the app can generate a timestamp.
-Expand the application to display multiple days of food logs. Group the food entries by day. Then include a component to display the total calories for whichever day the user selects.
-Add a new master component to average the total calories consumed per day so that the user can figure out how much exercise they should be getting on a regular basis.
-Objectives
-Your code will be reviewed for the following objectives:
+----
+### **Setup/Installation Requirements**
 
-Does the application work as expected?
-Is the app structured in a logical way, including a model, multiple components and TypeScript? (Interfaces are not required).
-Can the application create and edit new instances of a model?
-Does the app allow you to view a list of foods?
-Can the application filter foods based on their calories?
-Are dependencies managed with npm and Bower?
-Does the app include a gulp-based asset pipeline with a development server?
-Does code meet standards from previous weeks?
-Is the project in a presentable, portfolio-quality state?
-Project demonstrates understanding of concepts covered this week. If prompted, you are able to discuss your code with an instructor using correct terminology.
+Link to GitHub pages site: https://lisamaccarrigan.github.io/meal-tracker-angular2
+
+* Clone this repository: https://github.com/LisaMacCarrigan/meal-tracker-angular2.git
+* OPEN project folder ('meal-tracker-angular2') in Code Editor of choice
+* In terminal, run:
+  npm install
+  bower install
+  gulp build
+  gulp serve
+
+----
+
+### **Known Bugs**
+
+No known bugs.
+
+----
+### **Support and contact details**
+
+For comments or questions, please email Lisa.MacCarrigan@gmail.com
+
+----
+### **Technologies Used**
+
+* Angular2
+* HTML
+* JavaScript
+* TypeScript
+* jQuery
+* Gulp
+* Bootstrap CDN
+* npm JS package manager
+* Bower package manager
+----
+### **License**
+
+*This application is licensed under the MIT license*
+
+----
+----
+**Copyright (c) 2016 [Lisa MacCarrigan](https://github.com/lisamaccarrigan)**
