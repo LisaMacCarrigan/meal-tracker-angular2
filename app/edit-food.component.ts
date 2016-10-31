@@ -65,6 +65,8 @@ export class EditFoodComponent {
     $(".modal-backdrop.fade.in").remove();
     $(".modal.fade.bd-example-modal-sm.in").removeClass("in");
     $("#myModal").css("display", "none");
-
+    $(".edit-button").first().trigger("click");
+    $(".edit-button").css("background-color", "lightblue");
   }
+
 }

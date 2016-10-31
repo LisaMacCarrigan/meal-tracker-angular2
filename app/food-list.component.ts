@@ -16,7 +16,7 @@ import { Food } from './food.model';
     <ul class="list-group">
       <div *ngFor="let currentFood of childFoodList | calories:selectedCalorieOption">
         <li class="list-group-item">{{ currentFood.name + " | " + currentFood.calories + " kCal" }}
-        <button id="edit-button" type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bd-example-modal-sm" (click)="editButtonClicked(currentFood)">Edit</button>
+        <button type="button" class="btn btn-default btn-xs edit-button" data-toggle="modal" data-target=".bd-example-modal-sm" (click)="editButtonClicked(currentFood)">Edit</button>
         </li>
       </div>
     </ul>

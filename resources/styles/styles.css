@@ -24,7 +24,7 @@
   background-color: darkblue;
 }
 
-#edit-button {
+.edit-button {
   margin-left: 10px;
   background-color: lightblue;
 }
@@ -36,4 +36,8 @@
 
 #app-title {
   font-family: myHeader, sans-serif;
+}
+
+.btn:focus {
+  outline: none;
 }
