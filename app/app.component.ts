@@ -9,12 +9,12 @@ import { Food } from './food.model';
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 new-food">
+      <div class="col-md-5 new-food">
         <new-food
           (newFoodSender)="addFood($event)"
         ></new-food>
       </div>
-      <div class="col-xs-12 food-list">
+      <div class="col-md-7 food-list">
         <food-list
           [childFoodList]="masterFoodList"
           (clickSender)="showDetails($event)"

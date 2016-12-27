@@ -6,7 +6,10 @@
 
 html, body {
   margin: 0;
-  background-color: #E8E6EB;
+}
+
+.row {
+  margin-top: 50px;
 }
 
 /* ------------------- App Component Styles ------------------- */
@@ -30,24 +33,35 @@ html, body {
 
 /* ---------------------- New Food Styles --------------------- */
 
+.food-title-container {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.food-title-container h2 {
+  line-height: 50px;
+  text-align: center;
+}
+
 .new-food {
-  background-color: #9C9A9E;
+  background-color: #E8E6EB;
   padding-bottom: 20px;
+  border-radius: 5px;
 }
 
 /* ---------------------- Food List Styles --------------------- */
 
 .list-title-container {
   height: 50px;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-bottom: 15px;
   background-color: #FF6A5C;
 }
 
 .list-title-container h2 {
   line-height: 50px;
-  margin-left: 15px;
   color: #FFFFFF;
+  text-align: center;
 }
 
 /* ------------------------ Form Styles ----------------------- */
