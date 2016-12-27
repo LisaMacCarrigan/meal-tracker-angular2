@@ -4,17 +4,20 @@ import { Food } from './food.model';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="app-title-container">
-    <h1 id="app-title">myFoodiary</h1>
+  <div class="app-header">
+    <div class="header-content">
+      <img id="img-header" src="resources/img/icon.png" alt="logo">
+      <h1 id="app-title">myFoodiary</h1>
+    </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-5 new-food">
+      <div class="col-md-7 new-food">
         <new-food
           (newFoodSender)="addFood($event)"
         ></new-food>
       </div>
-      <div class="col-md-7 food-list">
+      <div class="col-md-5 food-list">
         <food-list
           [childFoodList]="masterFoodList"
           (clickSender)="showDetails($event)"
@@ -26,6 +29,10 @@ import { Food } from './food.model';
       (doneClickedSender)="finishedEditing()"
     ></edit-food>
   </div>
+  <div class="footer">
+    <p>&copy; 2016 Made By Lisa MacCarrigan</p>
+  </div>
+
   `
 })
 

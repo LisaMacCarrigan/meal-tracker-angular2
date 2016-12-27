@@ -5,7 +5,7 @@ import { Food } from './food.model';
   selector: 'food-list',
   template: `
     <div class="list-title-container">
-      <h2>Food Log</h2>
+      <h3>Food Log</h3>
     </div>
     <label class="food-form-label">Sort by Calories</label>
     <select class="form-control"  (change)="onSelect($event.target.value)">

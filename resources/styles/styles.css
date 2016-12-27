@@ -6,15 +6,16 @@
 
 html, body {
   margin: 0;
+  background-color: #FFBC5C;
 }
 
 .row {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /* ------------------- App Component Styles ------------------- */
 
-.app-title-container {
+.app-header {
   z-index: 5;
   height: 70px;
   border: 1px solid #CCC;
@@ -24,44 +25,95 @@ html, body {
   position: fixed;
 }
 
+.header-content {
+  margin: 5px;
+}
+
 #app-title {
   font-family: sans-serif;
   color: #FF6A5C;
   padding-left: 15px;
-  top: 50%;
+  line-height: 65%;
+  float: left;
 }
+
+#img-header {
+  width: 60px;
+  height: auto;
+  float: left;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  border-top-style: solid;
+  border-color: #CCCCCC;
+  border-top-width: thin;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+
+.footer p {
+  text-align: center;
+  font-size: 0.90em;
+  color: #FF6A5C;
+  margin: 6px;
+}
+
 
 /* ---------------------- New Food Styles --------------------- */
 
 .food-title-container {
   height: 50px;
   margin-bottom: 15px;
+  background-color: #FF6A5C;
 }
 
-.food-title-container h2 {
+.food-title-container h3 {
   line-height: 50px;
-  text-align: center;
+  color: #FFFFFF;
+  padding-left: 15px;
 }
 
 .new-food {
-  background-color: #E8E6EB;
+  padding-top: 5px;
   padding-bottom: 20px;
-  border-radius: 5px;
+  border-color: #FFE4BD;
+  background-color: #FFFFFF;
+}
+
+.btn-default.add {
+  background-color: #FF6A5C;
+  color: #FFFFFF;
+  width: 150px;
+}
+
+.btn-default.add:hover {
+  background-color: #E55F52;
+  color: #FFFFFF;
+  width: 150px;
 }
 
 /* ---------------------- Food List Styles --------------------- */
 
 .list-title-container {
   height: 50px;
-  border-radius: 20px;
   margin-bottom: 15px;
   background-color: #FF6A5C;
 }
 
-.list-title-container h2 {
+.list-title-container h3 {
   line-height: 50px;
   color: #FFFFFF;
-  text-align: center;
+  padding-left: 15px;
+}
+
+.food-list {
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 /* ------------------------ Form Styles ----------------------- */

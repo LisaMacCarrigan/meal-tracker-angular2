@@ -5,7 +5,7 @@ import { Food } from './food.model';
   selector: 'new-food',
   template: `
   <div class="food-title-container">
-    <h2>Add Item</h2>
+    <h3>Add Item</h3>
   </div>
   <div class="form-group">
     <label class="food-form-label" for="day-of-week">Day</label>
@@ -40,7 +40,7 @@ import { Food } from './food.model';
     <label class="food-form-label">Details
     <input class="form-control" #newDetails></label>
   </div>
-  <button class="btn btn-default" (click)="
+  <button class="btn btn-default btn-lg add" (click)="
     addClicked(newDay.value, newMealType.value, newName.value, newCalories.value, newDetails.value);
     newDay.value='';
     newMealType.value='';
