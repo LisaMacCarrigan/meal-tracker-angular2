@@ -4,15 +4,17 @@ import { Food } from './food.model';
 @Component({
   selector: 'my-app',
   template: `
+  <div class="app-title-container">
+    <h1 id="app-title">myFoodiary</h1>
+  </div>
   <div class="container">
-  <h1 id="app-title">myFoodiary</h1>
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 new-food">
         <new-food
           (newFoodSender)="addFood($event)"
         ></new-food>
       </div>
-      <div class="col-xs-12">
+      <div class="col-xs-12 food-list">
         <food-list
           [childFoodList]="masterFoodList"
           (clickSender)="showDetails($event)"

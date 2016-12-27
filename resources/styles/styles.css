@@ -1,41 +1,78 @@
+/* ---------------------- Global Styles ----------------------- */
+/*@font-face {
+  font-family: myHeader;
+  src: url("../fonts/Amorino_beta.ttf");
+}*/
+
+html, body {
+  margin: 0;
+  background-color: #E8E6EB;
+}
+
+/* ------------------- App Component Styles ------------------- */
+
+.app-title-container {
+  z-index: 5;
+  height: 70px;
+  border: 1px solid #CCC;
+  width: 100%;
+  margin: 0px 0px 25px 0px;
+  background-color: #FFFFFF;
+  position: fixed;
+}
+
+#app-title {
+  font-family: sans-serif;
+  color: #FF6A5C;
+  padding-left: 15px;
+  top: 50%;
+}
+
+/* ---------------------- New Food Styles --------------------- */
+
+.new-food {
+  background-color: #9C9A9E;
+  padding-bottom: 20px;
+}
+
+/* ---------------------- Food List Styles --------------------- */
+
+.list-title-container {
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  background-color: #FF6A5C;
+}
+
+.list-title-container h2 {
+  line-height: 50px;
+  margin-left: 15px;
+  color: #FFFFFF;
+}
+
+/* ------------------------ Form Styles ----------------------- */
+
+.form-group {
+  margin-bottom: 10px;
+}
+
 .food-form-label {
   font-size: 16px;
   font-weight: bolder;
-  color: darkblue;
-}
-
-.label-hint {
-  font-size: 13px;
-  font-weight: normal;
-  font-style: italic;
-  color: gray;
+  color: #414141;
 }
 
 .modal-content {
   padding: 20px;
 }
 
-.form-group {
-  margin-bottom: 10px;
-}
-
 .list-group-item {
   color: white;
-  background-color: darkblue;
+  background-color: #FF6A5C;
 }
 
 .edit-button {
   margin-left: 10px;
-  background-color: lightblue;
-}
-
-@font-face {
-  font-family: myHeader;
-  src: url("../fonts/Amorino_beta.ttf");
-}
-
-#app-title {
-  font-family: myHeader, sans-serif;
 }
 
 .btn:focus {

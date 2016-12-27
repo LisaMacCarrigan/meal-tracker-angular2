@@ -28,18 +28,15 @@ import { Food } from './food.model';
     </select>
   </div>
   <div class="form-group">
-    <label class="food-form-label">Food Name:
-    <p class="label-hint">Example: Banana</p>
+    <label class="food-form-label">Food
     <input class="form-control" #newName></label>
   </div>
   <div class="form-group">
-    <label class="food-form-label">Calories:
-    <p class="label-hint">Example: 105</p>
+    <label class="food-form-label">Calories
     <input class="form-control" #newCalories></label>
   </div>
   <div class="form-group">
-    <label class="food-form-label">Details:
-    <p class="label-hint">Example: Organic</p>
+    <label class="food-form-label">Details
     <input class="form-control" #newDetails></label>
   </div>
   <button class="btn btn-default" (click)="
