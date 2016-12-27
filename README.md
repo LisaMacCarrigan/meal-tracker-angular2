@@ -26,8 +26,6 @@ This is a web application that allows a user to log foods they have eaten each d
 ----
 ### **Setup/Installation Requirements**
 
-Link to GitHub pages site: https://lisamaccarrigan.github.io/meal-tracker-angular2
-
 * Clone this repository: https://github.com/LisaMacCarrigan/meal-tracker-angular2.git
 * Open project folder ('meal-tracker-angular2') in Code Editor of choice
 * In terminal, run:
