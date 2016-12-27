@@ -7,7 +7,7 @@ import { Food } from './food.model';
   <h3>Add to Diary</h3>
   <hr>
   <div class="form-group">
-    <label class="food-form-label" for="day-of-week">Select Day</label>
+    <label class="food-form-label" for="day-of-week">Day</label>
     <select class="form-control" #newDay>
       <option value="Monday">Monday</option>
       <option value="Tuesday">Tuesday</option>
@@ -19,7 +19,7 @@ import { Food } from './food.model';
     </select>
   </div>
   <div class="form-group">
-    <label class="food-form-label" for="meal-type">Select Meal Type</label>
+    <label class="food-form-label" for="meal-type">Meal Type</label>
     <select class="form-control" #newMealType>
       <option value="Breakfast">Breakfast</option>
       <option value="Lunch">Lunch</option>
@@ -28,17 +28,17 @@ import { Food } from './food.model';
     </select>
   </div>
   <div class="form-group">
-    <label class="food-form-label">Enter Food Name:
+    <label class="food-form-label">Food Name:
     <p class="label-hint">Example: Banana</p>
     <input class="form-control" #newName></label>
   </div>
   <div class="form-group">
-    <label class="food-form-label">Enter Calories:
+    <label class="food-form-label">Calories:
     <p class="label-hint">Example: 105</p>
     <input class="form-control" #newCalories></label>
   </div>
   <div class="form-group">
-    <label class="food-form-label">Add Details:
+    <label class="food-form-label">Details:
     <p class="label-hint">Example: Organic</p>
     <input class="form-control" #newDetails></label>
   </div>
