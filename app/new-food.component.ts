@@ -5,7 +5,7 @@ import { Food } from './food.model';
   selector: 'new-food',
   template: `
   <div class="food-title-container">
-    <h3>Add Item</h3>
+    <h3>Log New Food</h3>
   </div>
   <div class="form-group">
     <label class="food-form-label" for="day-of-week">Day</label>
