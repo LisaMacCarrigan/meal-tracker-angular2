@@ -58,6 +58,7 @@ For comments or questions, please email Lisa.MacCarrigan@gmail.com
 * Bootstrap CDN
 * npm JS package manager
 * Bower package manager
+
 ----
 ### **License**
 
